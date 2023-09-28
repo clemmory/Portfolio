@@ -1,10 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@300;400&family=Montserrat:wght@300&display=swap');
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:'Inter';
+  font-weight: 300;
 }
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 4.5em;
+  letter-spacing: 2px;
+}
+h2 {
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+button {
+  height:50px;
+  background-color:transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: 'Inter';
+  letter-spacing: 2px;
+  font-weight:300;
+  font-size: auto;
+  margin-right: 30px;
+  cursor: pointer;
+}
+span {
+  font-weight: bold;
+}
+input {
+  margin-bottom: 10px;
+  background-color: transparent;
+  padding:10px;
+  border: #B4ACAC solid 1px;
+  color:black;
+  height:45px;
+  font-size: 0.8em;
+  text-align: start;
+  font-family:'Inter';
+  font-weight: 300;
+}
+input::placeholder {
+  color:#B4ACAC;
+  text-align: start;
+  font-family:'Inter';
+  font-weight: 300;
 }

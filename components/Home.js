@@ -1,15 +1,57 @@
 import styles from '../styles/Home.module.css';
+import React from 'react';
+import Head from 'next/head';
+import Projects from './Projects';
+import Footer from './Footer';
+import { useRef } from 'react';
+
+
 
 function Home() {
+
+  const projects = useRef(null);
+  const about = useRef(null);
+  const contact = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+   
   return (
     <div>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-      </main>
+      <Head>
+        <title>Portfolio Clémentine Mory</title>
+      </Head>
+      <header className={styles.header}>
+        <div className={styles.tabsContainer}>
+          <p className={styles.tabs} onClick={()=> scrollToSection(projects)}>PROJECTS</p>
+          <p className={styles.tabs} onClick={()=> scrollToSection(about)}>ABOUT</p>
+          <p className={styles.tabs} onClick={()=> scrollToSection(contact)}>CONTACT</p>
+        </div>
+        <div className={styles.textContainer}>
+            <h1 className={styles.title}>hi there!<br/> i'm <span className={styles.firstname}>Clémentine.</span></h1>
+            <span className={styles.subtitle}>I'M A FRONTEND DEVELOPER</span>
+            <button className={styles.buttonContact} type="button" onClick={()=> scrollToSection(contact)}>CONTACT ME</button>
+        </div>
+      </header>
+      <div ref={projects}>
+        <Projects />
+      </div>
+      <div className={styles.aboutContainer} ref={about}>
+        <div className={styles.content}>
+          <h2 className={styles.title}>about</h2>
+          <p className={styles.text}>Hello, I'm Clem ! After six years of working as an interior designer, I've decided to take on a <span className={styles.coloredWord}>new challenge</span> and embark on a different path in the web development field. I recently completed the full-stack engineer course offered by "La Capsule" and earned the title of <span className={styles.coloredWord}>software developer and designer</span>. I am now seeking an opportunity to work as a frontend developer where I can contribute to exciting projects, continue my learning journey, and put my <span className={styles.coloredWord}>creativity</span> to good use.</p>
+        </div>
+      </div>
+      <div ref={contact}>
+        <Footer/>
+      </div>
     </div>
-  );
-}
+
+  )
+};
 
 export default Home;

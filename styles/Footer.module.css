@@ -1,0 +1,73 @@
+.footer {
+    width:100vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:#F5F5F5;
+    padding-top: 20px;
+}
+.content{
+    width:70%;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.contentRight{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title {
+    color:#4440FF ;
+    margin-bottom:50px;
+}
+.iconsContainer {
+    display: flex;
+}
+.icon {
+    width:60px;
+    height:60px;
+    color: #B4ACAC;
+    margin-right:30px;
+}
+.icon:hover {
+    color:#E18B66;
+    cursor: pointer;
+}
+.iconTop:hover {
+    color:#E18B66;
+    cursor: pointer;
+}
+.iconTop {
+    width:60px;
+    height:60px;
+    color: #B4ACAC;
+}
+.textContact {
+    color:#B4ACAC;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+.coloredWord {
+    color:#E18B66;
+    font-weight: bolder;
+}
+.contentLeft {
+    width:40%;
+    display: flex;
+    width:20vw;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text {
+    color:#B4ACAC;
+    font-size: 0.8em;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}

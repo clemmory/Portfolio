@@ -1,0 +1,88 @@
+.projectsContainer {
+    width:100vw;
+    display: flex;
+    padding-top:50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentRow {
+    width:70%;
+    height:456px;
+    display: flex;
+}
+.textBox{
+    width:50%;
+    /* padding: 50px 80px 50px 80px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imageBox {
+    width:50%;
+    background-color:#F5F5F5 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.content {
+    width:70%;
+}
+.number {
+    color: white;
+    font-size: 1.5em;  
+    font-family:'Inter';
+    font-weight: 300;
+}
+.description {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+.buttons {
+    display: flex;
+    width:100%;
+}
+.buttnBox{
+    width:30%;
+    height:50px;
+    margin-right: 30px;
+}
+.buttn {
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Inter';
+    letter-spacing: 2px;
+    font-weight:300;
+    font-size: auto;
+    cursor: pointer;
+  }
+.projectTitle {
+    color: white;
+}
+.buttn:hover {
+    cursor: pointer;
+}
+.skills {
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+}
+.skillsText {
+    color:#E18B66;
+    font-size: 0.8em;
+}
+.imageContainer {
+    width:90%;
+    height:100%;
+    opacity: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;   
+    margin-bottom: 10px;
+}
