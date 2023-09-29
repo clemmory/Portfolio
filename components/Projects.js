@@ -7,9 +7,9 @@ import Link from 'next/link';
 
 function Projects() {
 
-  const boxOneStyle = {'background-color':'#4440FF'};
-  const boxTwoStyle = {'background-color':'#E18B66'};
-  const boxThreeStyle = {'background-color':'#77BDC3'};
+  const boxOneStyle = {'backgroundColor':'#4440FF'};
+  const boxTwoStyle = {'backgroundColor':'#E18B66'};
+  const boxThreeStyle = {'backgroundColor':'#77BDC3'};
 
   const imageStyle = {
     'object-fit':'contain',
