@@ -32,7 +32,7 @@ function Home() {
           <p className={styles.tabs} onClick={()=> scrollToSection(contact)}>CONTACT</p>
         </div>
         <div className={styles.textContainer}>
-            <h1 className={styles.title}>hi there!<br/> i'm <span className={styles.firstname}>Clémentine.</span></h1>
+            <h1>hi there!<br/> i'm <span className={styles.firstname}>Clémentine.</span></h1>
             <span className={styles.subtitle}>I'M A FRONTEND DEVELOPER</span>
             <button className={styles.buttonContact} type="button" onClick={()=> scrollToSection(contact)}>CONTACT ME</button>
         </div>
