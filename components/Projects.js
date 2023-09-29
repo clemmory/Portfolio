@@ -27,7 +27,7 @@ function Projects() {
                 <h2 className={styles.projectTitle}>medMe</h2>
                 <p className={styles.description}>"medMe" is an application that provides a medicine delivery service. It was developed with two other students under a tight deadline of 10 days. <br/>Press PLAY to view a demo of the minimum viable product (MVP) version.</p>
                 <div className={styles.buttons}>
-                    <VideoPlayer videoUrl='/videos/medme.mp4'/>
+                    <VideoPlayer videoUrl='https://youtu.be/i7lpIey4TT4'/>
                     <Link href='https://github.com/Benjamindio/frontend-medme'target="_blank">
                     <a className={styles.buttnBox} target="_blank"><button className={styles.buttnBlue}>GITHUB FRONT</button></a>
                     </Link>

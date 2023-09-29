@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import ReactPlayer from 'react-player';
+
 import Modal from 'react-modal';
 import styles from '../styles/VideoPlayer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark} from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -37,7 +40,6 @@ const VideoPlayer = ({ videoUrl }) => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Video Modal"
-        // className={styles.modal}
         style={customStyles}
 
       >
@@ -45,10 +47,14 @@ const VideoPlayer = ({ videoUrl }) => {
             <div className={styles.buttonContainer}>
                 <FontAwesomeIcon icon={faXmark} onClick={closeModal} className={styles.modalButtn}/>
             </div>
-            <video controls width={400}>
-                <source src={videoUrl} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+            <div className={styles.videoContainer}>
+              <ReactPlayer
+                url={videoUrl}
+                controls={true} // Show video controls (play, pause, volume, etc.)
+                width={1280}
+                height={720}
+              />
+            </div>
         </div>
       </Modal>
     </div>

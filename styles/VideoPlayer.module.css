@@ -20,7 +20,17 @@
 .videoPlayer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-
 }
+.videoContainer{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+.iframe-container.ReactPlayer {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
