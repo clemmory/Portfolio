@@ -1,0 +1,26 @@
+.button {
+    width: 100px;
+}
+
+.button:hover {
+    background-color: #E18B66;
+    border:none;
+}
+.buttonContainer {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;;
+}
+.modalButtn {
+    color: #4440FF;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+.videoPlayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}

@@ -7,6 +7,7 @@ import { useRef } from 'react';
 
 
 
+
 function Home() {
 
   const projects = useRef(null);
@@ -46,9 +47,9 @@ function Home() {
           <p className={styles.text}>Hello, I'm Clem ! After six years of working as an interior designer, I've decided to take on a <span className={styles.coloredWord}>new challenge</span> and embark on a different path in the web development field. I recently completed the full-stack engineer course offered by "La Capsule" and earned the title of <span className={styles.coloredWord}>software developer and designer</span>. I am now seeking an opportunity to work as a frontend developer where I can contribute to exciting projects, continue my learning journey, and put my <span className={styles.coloredWord}>creativity</span> to good use.</p>
         </div>
       </div>
-      <div ref={contact}>
+      <footer ref={contact}>
         <Footer/>
-      </div>
+      </footer>
     </div>
 
   )

@@ -1,30 +1,30 @@
 .footer {
-    width:100vw;
-    height:50vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     background-color:#F5F5F5;
-    padding-top: 20px;
+    padding: 20px;
 }
 .content{
     width:70%;
     display: flex;
     justify-content: space-between;
     align-items:flex-start;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .contentRight{
-    width:50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+.contentLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 .title {
     color:#4440FF ;
-    margin-bottom:50px;
 }
 .iconsContainer {
     display: flex;
@@ -57,17 +57,9 @@
     color:#E18B66;
     font-weight: bolder;
 }
-.contentLeft {
-    width:40%;
-    display: flex;
-    width:20vw;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
 .text {
     color:#B4ACAC;
     font-size: 0.8em;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 0px;
 }

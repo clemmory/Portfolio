@@ -25,13 +25,15 @@ function Form () {
       };
     
       return (
-        <form ref={form} onSubmit={sendEmail} className={styles.formContainer}>
-            <input type="text" name="user_name" placeholder='Name'required />
-            <input type="email" name="user_email"placeholder='Email' required />
-            <textarea className={styles.input} name="message" placeholder='Your message' rows={5} cols={40} required />
-            <button className={styles.button} type="submit" value="Send">SEND<FontAwesomeIcon icon={faPaperPlane} className={styles.icon}/></button>
-            {messageSent}
-        </form>
+        <div>
+          <form ref={form} onSubmit={sendEmail} className={styles.formContainer}>
+              <input type="text" name="user_name" placeholder='Name'required />
+              <input type="email" name="user_email"placeholder='Email' required />
+              <textarea className={styles.input} name="message" placeholder='Your message' rows={5} cols={40} required />
+              <button className={styles.button} type="submit" value="Send">SEND<FontAwesomeIcon icon={faPaperPlane} className={styles.icon}/></button>
+              {messageSent}
+          </form>
+        </div>
       )
     };
     
