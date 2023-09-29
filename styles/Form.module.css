@@ -1,6 +1,6 @@
 .input{
     margin-bottom: 10px;
-    background-color: transparent;
+    background-color: white;
     padding:10px;
     border: #B4ACAC solid 1px;
     text-align: start;
@@ -20,25 +20,29 @@
     align-items: center;
     border: #B4ACAC solid 1px;
     color:#B4ACAC;
+    background-color: white;
 }
 .button:hover{
     border: #E18B66 solid 1px;
     background-color: #E18B66;
     color:white;
     cursor: pointer;
+
 }
 .icon {
-    color: #B4ACAC;
+    border-color: #B4ACAC;
     margin-left:5px;
 }
-.icon:hover {
-    color:white;
-    cursor: pointer;
-}
+
 .formContainer {
     width:100%;
     display: flex;
     width:20vw;
     flex-direction: column;
     justify-content: flex-start;
+}
+.message {
+    color:#4440FF ;
+    font-size: 1em;
+    font-weight: bolder;
 }

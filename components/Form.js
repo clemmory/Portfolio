@@ -8,6 +8,7 @@ import { faPaperPlane} from '@fortawesome/free-solid-svg-icons';
 
 function Form () {
 
+    const [isMessageSent,setIsMessageSent] = useState(false)
     let messageSent;
     const form = useRef();
     
@@ -18,11 +19,17 @@ function Form () {
           .then((result) => {
               console.log(result.text);
               console.log('Message Sent')
-              messageSent = <p className = {styles.messageSent}>Thank you for your message !</p>
+              setIsMessageSent(true)
+  
           }, (error) => {
               console.log(error.text);
           });
       };
+
+      if (isMessageSent) {
+        messageSent = (<p className={styles.message}>Thank you for your message!</p>)
+
+      }
     
       return (
         <div>
@@ -31,8 +38,8 @@ function Form () {
               <input type="email" name="user_email"placeholder='Email' required />
               <textarea className={styles.input} name="message" placeholder='Your message' rows={5} cols={40} required />
               <button className={styles.button} type="submit" value="Send">SEND<FontAwesomeIcon icon={faPaperPlane} className={styles.icon}/></button>
-              {messageSent}
           </form>
+          {messageSent}
         </div>
       )
     };
