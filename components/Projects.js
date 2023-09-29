@@ -1,7 +1,9 @@
 import styles from '../styles/Projects.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import medMe from '../public/medMe.JPG';
+import morningnews from '../public/morningnews.JPG';
+import mymoviz from '../public/mymoviz.JPG';
 
 
 
@@ -38,7 +40,7 @@ function Projects() {
             </div>
             <div className={styles.imageBox}>
               <div className={styles.imageContainer}>
-                <Image src='/00.JPG' alt='screen' style={imageStyle} layout='fill'/>
+              <Image src={medMe} alt='screen' style={imageStyle} layout='fill'/>
               </div>
               <div className={styles.skills}>
                 <p className={styles.skillsText}>REACT NATIVE</p>
@@ -53,7 +55,7 @@ function Projects() {
         <div className={styles.contentRow}>
             <div className={styles.imageBox}>
               <div className={styles.imageContainer}>
-                <Image src='/morningnews.JPG' alt='morning news home page' style={imageStyle} layout='fill'/>
+                <Image src={morningnews} alt='morning news home page' style={imageStyle} layout='fill'/>
               </div>
               <div className={styles.skills}>
                 <p className={styles.skillsText}>EXPRESS</p>
@@ -102,7 +104,7 @@ function Projects() {
             </div>
             <div className={styles.imageBox}>
               <div className={styles.imageContainer}>
-                <Image src='/mymoviz.jpg' alt='my moviz home page' style={imageStyle} layout='fill'/>
+                <Image src={mymoviz} alt='my moviz home page' style={imageStyle} layout='fill'/>
               </div>
               <div className={styles.skills}>
                 <p className={styles.skillsText}>EXPRESS</p>
