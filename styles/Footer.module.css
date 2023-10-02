@@ -7,21 +7,19 @@
     padding: 20px;
 }
 .content{
-    width:70%;
+    width:80%;
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items:center;
     margin-top: 40px;
 }
-.contentRight{
+.contentLeft{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.contentLeft {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 45%;
 }
 .title {
     color:#4440FF ;
@@ -30,8 +28,8 @@
     display: flex;
 }
 .icon {
-    width:60px;
-    height:60px;
+    width:50px;
+    height:50px;
     color: #B4ACAC;
     margin-right:30px;
 }
@@ -44,8 +42,8 @@
     cursor: pointer;
 }
 .iconTop {
-    width:60px;
-    height:60px;
+    width:50px;
+    height:50px;
     color: #B4ACAC;
 }
 .textContact {
@@ -62,4 +60,36 @@
     font-size: 0.8em;
     margin-top: 40px;
     margin-bottom: 0px;
+}
+
+    /* SMALL SCREEN */
+
+@media screen and (max-width: 768px) {
+    .content{
+        width:100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .contentLeft{
+        width:100%;
+    }
+    .icon {
+        width:35px;
+        height:35px;
+        margin-right:20px;
+    }
+    .iconTop {
+        width:35px;
+        height:35px;
+    }
+    .text {
+        font-size: 0.5em;
+        margin-top: 20px;
+    }
+    .textContact {
+        font-size: 1em;
+    }
 }

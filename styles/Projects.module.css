@@ -1,32 +1,33 @@
 .projectsContainer {
-    display: flex;
-    padding-top:50px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    width: 80%;
+    padding-top: 50px;
 }
-.contentRow {
-    width:70%;
-    height:456px;
-    display: flex;
+.square {
+    background-color: #F5F5F5;
+    position: relative;
 }
-.textBox{
-    width:50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.imageBox {
-    width:50%;
-    background-color:#F5F5F5 ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+.square::after {
+    content:"";
+    padding-top:100%;
+    display: block;
 }
 .content {
-    width:70%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.contentImage {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width:100%;
+    height:100%;
 }
 .number {
     color: white;
@@ -37,22 +38,16 @@
 .description {
     color: white;
     font-size: 1em;
-    margin-bottom: 40px;
 }
 .buttons {
     display: flex;
-    width:100%;
-}
-.buttnBox{
-    width:30%;
-    height:50px;
-    margin-right: 30px;
+    margin-top: 30px;
 }
 .projectTitle {
     color: white;
 }
 .buttnBlue {
-    width:100%;
+    width:100px;
     text-align: center;
     justify-content: center;
     font-family: 'Inter';
@@ -68,7 +63,7 @@
     background-color: #E18B66;
 }
 .buttnOrange {
-    width:100%;
+    width:100px;
     text-align: center;
     justify-content: center;
     font-family: 'Inter';
@@ -84,7 +79,7 @@
     background-color: #4440FF;
 }
 .buttnGreen {
-    width:100%;
+    width:100px;
     text-align: center;
     justify-content: center;
     font-family: 'Inter';
@@ -102,35 +97,120 @@
 }
 .skills {
     display: flex;
-    width:100%;
     justify-content: space-evenly;
     margin-bottom: 0px;
 }
+.skills p {
+    font-size: 0.7em;
+}
 .skillsTextBlue {
-    font-size: 0.9em;
     color: #4440FF;
     font-weight: bolder;
 }
 .skillsTextOrange {
-    font-size: 0.9em;
     color: #E18B66;
     font-weight: bolder;
 }
 .skillsTextGreen {
-    font-size: 0.9em;
     color: #77BDC3;
     font-weight: bolder;
 }
 .imageContainer {
-    width:90%;
-    height:100%;
     opacity: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;   
-    margin-bottom: 10px;
+    width:100%;
+    height:85%;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
 }
 .image {
     object-fit:contain;
+
 }
+
+/* MEDIUM SCREEN */
+
+@media screen and (max-width: 1024px) {
+    .projectsContainer {
+        width: 100%;
+        padding-top: 0px;
+    }
+    .description {
+        color: white;
+        width: 80%;
+        font-size: 1em;
+    }
+    .content {
+        padding:10px;
+    }
+    .buttons {
+        margin-top: 10px;
+    }
+    .buttnBlue ,
+    .buttnGreen,
+    .buttnOrange{
+        width:75px;
+      }
+
+  
+  }
+
+/* SMALL SCREEN 640px */ 
+
+@media screen and (max-width: 768px) {
+    .projectsContainer {
+        width: 100%;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .skills p {
+        font-size: 0.7em;
+    }
+    .buttnBlue ,
+    .buttnGreen,
+    .buttnOrange{
+        width:150px;
+        height:50px;
+        margin-right: 20px;
+        font-size: 0.8em;
+    }
+    .description {
+        width:100%;
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 640px) {
+    .projectsContainer {
+        width: 100%;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .skills p {
+        font-size: 0.7em;
+    }
+    .description {
+        width:100%;
+        font-size: 1em;
+    }
+    .buttnBlue ,
+    .buttnGreen,
+    .buttnOrange{
+        width:100px;
+        height:50px;
+        margin-right: 20px;
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 480px) {
+    .buttons {
+        width:100%;
+    }
+    .description {
+        width:100%;
+        font-size: 1em;
+    }
+}
+
+

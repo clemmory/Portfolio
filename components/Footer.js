@@ -19,7 +19,7 @@ const scrollToTop = () => {
         <div className={styles.footer}>
             <h2 className={styles.title}>let's connect !</h2>
             <div className={styles.content}>
-                <div className={styles.contentRight}>
+                <div className={styles.contentLeft}>
                     <p className={styles.textContact}>Feel free to reach out if you're interested in <span>working together.</span> <br/>You can fill up the for form or email me at <span>clementine.mory@gmail.com</span></p>
                     <div className={styles.iconsContainer}>
                         <Link href='https://github.com/clemmory'>
@@ -34,9 +34,7 @@ const scrollToTop = () => {
                         </Link>
                     </div>
                 </div>
-                <div className={styles.contentLeft}>
-                    <Form/>
-                </div>
+                <Form/>
                 <FontAwesomeIcon icon={faCircleChevronUp} className={styles.iconTop} onClick={scrollToTop}/>
             </div>
             <p className={styles.text}>Coded and designed with <FontAwesomeIcon icon={faHeart} width={15} height={15} color='#4440FF' /> by Clémentine Mory | @ 2023 All rights reserved. </p>

@@ -19,7 +19,7 @@ function Form () {
       const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_ryyj3km', 'template_2ki87vq', form.current, 'UMuUqkIbrmeMO6CNZ')
+        emailjs.sendForm('service_ryyj3km','template_2ki87vq', form.current, 'UMuUqkIbrmeMO6CNZ')
           .then((result) => {
               console.log(result.text);
               console.log('Message Sent')
@@ -52,18 +52,3 @@ function Form () {
     
     export default Form;
 
-
-
-
-      //     return (
-      //   <div>
-      //     <form ref={form} onSubmit={sendEmail} className={styles.formContainer}>
-      //         <input type="text" name="user_name" placeholder='Name'required />
-      //         <input type="email" name="user_email"placeholder='Email' required />
-      //         <textarea className={styles.input} name="message" placeholder='Your message' rows={5} cols={40} required />
-      //         <button className={styles.button} type="submit" value="Send">SEND<FontAwesomeIcon icon={faPaperPlane} className={styles.icon}/></button>
-      //     </form>
-      //     {messageSent}
-      //   </div>
-      // )
-    
