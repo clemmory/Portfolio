@@ -69,7 +69,7 @@ function Projects() {
                 </div>
               </div>
             </div>
-            <div className={styles.square}>
+            <div className={styles.squareWhite}>
               <div className={styles.contentImage}>
                 <div className={styles.imageContainer}>
                   <Image src={morningnews} alt='morning news home page' className={styles.image} layout='fill'/>

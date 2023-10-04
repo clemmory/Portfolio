@@ -51,8 +51,8 @@ const VideoPlayer = ({ videoUrl }) => {
               <ReactPlayer
                 url={videoUrl}
                 controls={true} // Show video controls (play, pause, volume, etc.)
-                width={1280}
-                height={720}
+                width='80vw'
+                height='60vh'
               />
             </div>
         </div>

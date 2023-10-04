@@ -9,6 +9,10 @@
     background-color: #F5F5F5;
     position: relative;
 }
+.squareWhite {
+    background-color: white;
+    position: relative;
+}
 .square::after {
     content:"";
     padding-top:100%;
@@ -28,6 +32,7 @@
     padding: 20px;
     width:100%;
     height:100%;
+    
 }
 .number {
     color: white;

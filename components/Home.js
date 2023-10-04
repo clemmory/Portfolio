@@ -25,6 +25,7 @@ function Home() {
     <div>
       <Head>
         <title>Portfolio Clémentine Mory</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
       <header className={styles.header}>
         <div className={styles.tabsContainer}>
@@ -34,7 +35,7 @@ function Home() {
         </div>
         <div className={styles.textContainer}>
             <h1>hi there!<br/> i'm <span className={styles.firstname}>Clémentine.</span></h1>
-            <span className={styles.subtitle}>I'M A FRONTEND DEVELOPER</span>
+            <span className={styles.subtitle}>I'M A WEB DEVELOPER</span>
             <button className={styles.buttonContact} type="button" onClick={()=> scrollToSection(contact)}>CONTACT ME</button>
         </div>
       </header>
