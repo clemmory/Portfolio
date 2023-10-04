@@ -86,9 +86,7 @@
     } 
     .tabs {
         margin-left: 30px;
-        color: white;
-        font-size: 1em;
-        letter-spacing: 2px;
+
     }
     .textContainer {
         margin-bottom: 50px;
@@ -103,23 +101,12 @@
   /* MEDIUM SCREEN */
 
   @media screen and (max-width: 768px) {
-    .header { 
-        padding:20px;
-    } 
     .tabs {
         margin-left: 30px;
-        color: white;
         font-size: 1em;
         letter-spacing: 2px;
     }
-    .textContainer {
-        margin-bottom: 50px;
-        margin-left: 50px;
-    }
     .aboutContainer {
-        display: flex;
-        justify-content: center;
-        text-align: center;
         padding-top:0px;
         padding-bottom: 0px;
     }
@@ -127,25 +114,33 @@
         font-size: 0.7em;
         text-align: justify;
     }
-    .content{
-        width: 100%;
-        padding:20px;
-    }
-  };
+  }
 
     /* SMALL SCREEN */
 
+
     @media screen and (max-width: 640px) {
         .textContainer {
-            margin-left: 0px;
+            margin-left: 30px;
         }
         .buttonContact {
-            margin-top: 20px;
+            margin-top: 30px;
         }
         .subtitle {
-            font-size: 1em;
-            letter-spacing: 2px;
-            font-weight: 400;
+            font-size: 1.8em;
+        }
+      }
+
+    
+    @media screen and (max-width: 480px) {
+        .tabsContainer{
+            justify-content: space-evenly;
+        }
+        .tabs {
+            margin-left: 0px;
+        }
+        .subtitle {
+            font-size: 1.5em;
         }
       };
 

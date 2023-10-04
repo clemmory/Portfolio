@@ -110,22 +110,28 @@ input::placeholder {
 /* SMALL SCREEN MOBILE */
 
 @media screen and (max-width: 768px) {
-   button { 
-    font-size: 0.5rem;
-    padding: 1em; 
-    height:35px;
-    margin-right: auto;
-    letter-spacing: 0px;
-  } 
   h1 {
-    font-size: 2.5em;
+    font-size: 3.2em;
   }
   h2 {
-    font-size: 2.5em;
+    font-size: 3em;
   }
 } 
 
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 3em;
+  }
+
+ h2 {
+   font-size: 2.5em;
+ }
+} 
+
 @media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.5em;
+  }
 
  h2 {
    font-size: 2em;
