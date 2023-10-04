@@ -30,7 +30,7 @@ function Home() {
       <header className={styles.header}>
         <div className={styles.tabsContainer}>
           <p className={styles.tabs} onClick={()=> scrollToSection(projects)}>PROJECTS</p>
-          <p className={styles.tabs} onClick={()=> scrollToSection(about)}>ABOUT</p>
+          <p className={styles.tabs} onClick={()=> scrollToSection(about)}>ABOUT ME</p>
           <p className={styles.tabs} onClick={()=> scrollToSection(contact)}>CONTACT</p>
         </div>
         <div className={styles.textContainer}>
@@ -44,8 +44,8 @@ function Home() {
       </div>
       <div className={styles.aboutContainer} ref={about}>
         <div className={styles.content}>
-          <h2 className={styles.title}>about</h2>
-          <p className={styles.text}>Hello, I'm Clem ! After six years of working as an interior designer, I've decided to take on a <span className={styles.coloredWord}>new challenge</span> and embark on a different path in the web development field. I recently completed the full-stack engineer course offered by "La Capsule" and earned the title of <span className={styles.coloredWord}>software developer and designer</span>. I am now seeking an opportunity to work as a frontend developer where I can contribute to exciting projects, continue my learning journey, and put my <span className={styles.coloredWord}>creativity</span> to good use.</p>
+          <h2 className={styles.title}>about me</h2>
+          <p className={styles.text}><p className = {styles.importantText}>Hello, I'm Clem !</p>After six years of working as an interior designer, I've decided to take on a <span className={styles.coloredWord}>new challenge</span> and embark on a different path in the web development field. I recently completed the full-stack engineer course offered by "La Capsule" and earned the title of <span className={styles.coloredWord}>software developer and designer</span>. I am now seeking an opportunity to work as a frontend developer where I can contribute to exciting projects, continue my learning journey, and put my <span className={styles.coloredWord}>creativity</span> to good use.</p>
         </div>
       </div>
       <footer ref={contact}>
