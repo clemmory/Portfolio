@@ -13,6 +13,11 @@
     background-color: white;
     position: relative;
 }
+.squareWhite::after {
+    content:"";
+    padding-top:100%;
+    display: block;
+}
 .square::after {
     content:"";
     padding-top:100%;
@@ -211,10 +216,6 @@
 @media screen and (max-width: 480px) {
     .buttons {
         width:100%;
-    }
-    .description {
-        width:100%;
-        font-size: 1em;
     }
 }
 
