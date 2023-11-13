@@ -1,6 +1,8 @@
 import styles from '../styles/Footer.module.css';
 import { useState } from 'react';
 import Form from './Form';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSquareGithub,faLinkedin} from '@fortawesome/free-brands-svg-icons';
@@ -10,6 +12,10 @@ import Link from 'next/link';
 
 
 function Footer() {
+
+useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+}, []);
 
 const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });

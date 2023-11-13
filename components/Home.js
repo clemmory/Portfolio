@@ -5,11 +5,16 @@ import Projects from './Projects';
 import Footer from './Footer';
 import { useRef } from 'react';
 
-
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 
 
 function Home() {
 
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
+    
   const projects = useRef(null);
   const about = useRef(null);
   const contact = useRef(null);

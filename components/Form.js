@@ -5,8 +5,15 @@ import styles from '../styles/Form.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane} from '@fortawesome/free-solid-svg-icons';
 
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
 
 function Form () {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
