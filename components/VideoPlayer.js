@@ -6,18 +6,10 @@ import styles from '../styles/VideoPlayer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark} from '@fortawesome/free-solid-svg-icons';
 
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
-
-
 // Modal.setAppElement('#root'); // Set the root element for accessibility
 
 const VideoPlayer = ({ videoUrl }) => {
 
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-    }, []);
-    
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {

@@ -6,14 +6,7 @@ import morningnews from '../public/morningnews.JPG';
 import mymoviz from '../public/mymoviz.JPG';
 import VideoPlayer from './VideoPlayer';
 
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
-
 function Projects() {
-
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-    }, []);
 
   const boxOneStyle = {'backgroundColor':'#4440FF'};
   const boxTwoStyle = {'backgroundColor':'#E18B66'};
