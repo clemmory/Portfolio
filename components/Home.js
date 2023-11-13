@@ -21,6 +21,12 @@ function Home() {
    
   return (
     <div>
+      <Head>
+        <title>Portfolio Clémentine Mory</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="icon" href='/favicon.ico' />
+        <meta name='description' content="Clémentine Mory is a web and mobile developer based in Valencia, Spain."/>
+      </Head>
       <header className={styles.header}>
         <div className={styles.tabsContainer}>
           <p className={styles.tabs} onClick={()=> scrollToSection(projects)}>PROJECTS</p>
