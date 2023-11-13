@@ -24,6 +24,7 @@ function Home() {
       <Head>
         <title>Portfolio Clémentine Mory</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="icon" href='./public/favicon.ico'/>
       </Head>
       <header className={styles.header}>
         <div className={styles.tabsContainer}>
